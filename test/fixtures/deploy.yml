@@ -1,0 +1,7 @@
+---
+- hosts: webservers
+  remote_user: user
+  sudo: yes
+  vars:
+    app_name: myapp
+    deploy_dir: /data/{{app_name}}  
